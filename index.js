@@ -12,7 +12,7 @@ module.exports = function(content) {
     const options = Object.assign({ root: process.cwd() }, query);
 
     const root = path.resolve(options.root);
-    const templateUrl = filename.replace(root + path.sep, '');
+    const templateUrl = filename.replace(root + path.sep, '').replace(/\\/g, '/');
     const minnedTemplate = htmlmin.minify(content, options.htmlmin);
 
     this.cacheable();
