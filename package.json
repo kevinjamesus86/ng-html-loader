@@ -1,6 +1,6 @@
 {
   "name": "ng-html-loader",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "webpack ng-html loader, featuring html-minifier",
   "main": "index.js",
   "author": "",
